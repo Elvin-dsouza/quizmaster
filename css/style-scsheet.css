@@ -1,0 +1,52 @@
+body{
+	background:white;
+	font-family:'Roboto',sans-serif;
+	margin:0px;
+	padding:0px;
+	color:black;
+}
+
+.container
+{
+	border:1px solid black;
+	width:80%;
+	margin:0 auto;
+}
+h1,h2
+{
+	text-align: center;
+	font-weight:400;
+}
+h2
+{
+	font-weight:250;
+}
+
+table{
+	border:1px solid black;
+	display:flex;
+	flex-flow:column nowrap;
+	width:90%;
+	margin:0 auto;
+}
+
+th,td
+{
+	padding:10px 5px 10px 5px;
+	flex:1;
+	border:1px solid lightgrey;
+	text-align:left;
+}
+tr
+{
+	padding:2px;
+	border:1px solid grey;
+	display:flex;
+	flex-flow:row nowrap;
+}
+
+@media print{@page {size: A4 portrait;}
+
+
+
+}
