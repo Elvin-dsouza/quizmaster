@@ -8,20 +8,20 @@
 class login
 {
 
-/*
+
 	private $connection; //connection handle , private to prevent unauthorised usage and modification of the users data from external sources
 	private $db_addr='localhost';
 	private $db_user='root';//username for the database
 	private $db_pw="";//database pssword
 	private $db_name='sygma';// database name.
 
-*/
+/*
 	private $connection; //connection handle , private to prevent unauthorised usage and modification of the users data from external sources
 	private $db_addr='localhost';
 	private $db_user='sygmaapp';//username for the database
 	private $db_pw="sygelvshi15";//database pssword
 	private $db_name='sygma2015';// database name.
-
+*/
 	 const REDIRECT_LOGIN = 'Location:../index.php'; // the adress to redirect to after login process is successfully completed
 	 const REDIRECT_REGISTER='Location:../index.php'; // the adress to redirect to after the registration process is completed
 	 const REDIRECT_LOGIN_ERROR='Location:../index.php';// the adress to redirect if an error is encountered on login process this is optional
@@ -160,7 +160,7 @@ class login
 		$result=$handle->query($qry);
 		if($result->num_rows)
 		{
-			
+
 			while($row = $result->fetch_assoc())
 			{
 

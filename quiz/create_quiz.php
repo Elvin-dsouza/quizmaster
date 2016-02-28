@@ -1,8 +1,8 @@
 <!doctype html>
-<?php
+<?php/*
 
 	session_start();
-	
+
 		if(isset($_SESSION['logged']))
 		{
 			if($_SESSION['logged'] == 0 || $_SESSION['permissions'] < 5 )
@@ -14,13 +14,13 @@
 		else
 		{
 			header('location:../index.php');
-		}
+		}*/
 ?>
 <html>
 	<head>
 		<link href="../css/quiz-page.css" rel="stylesheet" type="text/css"/>
 		<meta name=viewport content="width=device-width, initial-scale=1">
-		
+
 		<title>Sygma 2016-A State Level IT Fest</title>
 		<link href='http://fonts.googleapis.com/css?family=Josefin+Slab:600,300,400700,600,800,900italic' rel='stylesheet' type='text/css'>
 		<meta name="description" content="Sygma Is a State Level IT Fest Organised By Shri Dharmasthala Manjunatheshwara College of Business Management Mangalore
@@ -36,16 +36,9 @@
 	</head>
 	<body>
 		<?php require "../inline-svg.php";?>
-		
-
-
-		
-
 		<header>
-
-			
 			<article id="heading-area">
-				<figure><img src="../images/logo.png" alt="SDMCBM" /></figure>
+
 				<h1>IT-Quiz Prelims</h1>
 			</article>
 		</header>
@@ -53,7 +46,7 @@
 			<nav class="main-nav">
 				<a href="index.php"><div class="material-button square flat" style="padding:0px; "><div class="material-layer dark"></div><svg class="icon-back"><use xlink:href="#icon-arrow_back"></use></svg></div></a>
 			</nav>
-						
+
 			<section class="card registration" style="margin-top:0px;">
 				<section class="question-cover" style="display:none"></section>
 				<h3>Please Create your Quiz:</h3>
@@ -61,7 +54,7 @@
 				<div class="material-button circle raised team-accept" style=" width:50px; height:50px ; margin:50px; border-radius:50%;padding:0px; "><div class="material-layer light"></div><svg class="icon-check"><use xlink:href="#icon-check"></use></svg></div>
 
 			</section>
-			
+
 
 			</section>
 				<footer>
@@ -95,7 +88,7 @@
 					<a href="#">Back to Top</a>
 			</aside></section>
 		</footer>
-		
+
 			<script>
 				var quiz_id = $('#quizid').text();
 				var animStart = 0;
@@ -121,26 +114,26 @@
 				                  animStart=0;
 				              },500);
 				 		}
-		              
 
-					
+
+
 
 		          });
-				 
+
 
 				  $(".team-accept").click(function(e){
 
-				 		
-				 		
+
+
 				          var team_code=$(this).parent().find("input").val();
-				          
-				        	
-				        teamCodeName=team_code;	
-				          
+
+
+				        teamCodeName=team_code;
+
 				   		  $.post('quiz-reg.php',{
 
 				   		  	'quiz':team_code,
-				   		  	
+
 
 				   		  },
 				   		  function(data,status){
@@ -152,7 +145,7 @@
 				   		  		{
 				   		  			window.alert('error:please contact admin');
 				   		  		}
-				   		  });	
+				   		  });
 
 		          });
 				/* $(".submit-info").click(function(e) {

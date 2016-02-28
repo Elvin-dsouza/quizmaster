@@ -5,18 +5,19 @@
 class quiz
 {
 
-/*
 	private $connection; //connection handle , private to prevent unauthorised usage and modification of the users data from external sources
 	private $db_addr='localhost';
 	private $db_user='root';//username for the database
 	private $db_pw="";//database pssword
 	private $db_name='sygma';// database name.
-*/
+
+/*
 	private $connection; //connection handle , private to prevent unauthorised usage and modification of the users data from external sources
 	private $db_addr='localhost';
 	private $db_user='sygmaapp';//username for the database
 	private $db_pw="sygelvshi15";//database pssword
 	private $db_name='sygma2015';// database name.
+*/
 
 	function __CONSTRUCT()
 	{
@@ -68,9 +69,7 @@ class quiz
 				$result = $handle ->query("SELECT * FROM question WHERE q_id=".$id);
 
 
-				$opt2 = 	str_replace('â€', "'", $opt2);
-				$opt3 = 	str_replace('â€', "'", $opt3);
-				$opt4 = 	str_replace('â€', "'", $opt4);
+				
 				$j=1;
 				if($result->num_rows)
 				{

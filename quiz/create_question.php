@@ -1,7 +1,7 @@
 <!doctype html>
 <?php
 
-	session_start();
+	/*session_start();
 
 		if(isset($_SESSION['logged']))
 		{
@@ -14,7 +14,7 @@
 		else
 		{
 			header('location:../index.php');
-		}
+		}*/
 ?>
 <html>
 	<head>
@@ -45,7 +45,7 @@
 
 
 			<article id="heading-area">
-				<figure><img src="../images/logo.png" alt="SDMCBM" /></figure>
+				
 				<h1><?php require "class.quiz.php";
 						$id = $_GET['qid'];
 						$q = new quiz();
