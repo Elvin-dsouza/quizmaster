@@ -17,21 +17,21 @@
 	</head>
 	<body>
 		<?php require "../inline-svg.php";?>
-	
+
 
 		<header>
 
-			
+
 			<article id="heading-area">
 				<figure><img src="../images/logo.png" alt="SDMCBM" /></figure>
 				<h1>Administration Login</h1>
-				
+
 			</article>
 		</header>
 		<section id="content" >
 			<nav class="main-nav">
 				<a href="index.php"><div class="material-button flat" style="padding:0px; "><div class="material-layer dark"></div><svg class="icon-back"><use xlink:href="#icon-arrow_back"></use></svg></div></a>
-				
+
 			</nav>
 			<article>
 				<h3>Please enter Your Username And password to Continue.... </h3>
@@ -47,10 +47,20 @@
 
 
 				</form>
-		
+				<form action="register.php" method="post" id="login">
+						<h2 style="color:#333; font-family:'roboto';">Login/Registration Form</h2>
+							<input type="text" name="name" placeholder="Username" class="text-bx" required>
+							<input type="email" name="email" placeholder="someone@something.com" class="text-bx" required>
+							<input type="password" name="password" placeholder="password" class="text-bx" required>
+							<input type="password" name="cpassword" placeholder="password" class="text-bx" required>
+							<input type="submit" value="Login" class="register"><br><br>
 
-				
-		
+
+					</form>
+
+
+
+
 		</section>
 		<footer>
 			<section>
@@ -109,7 +119,7 @@
 		                  animStart=0;
 		              },500);
 		 		}
-              
+
 
           });
 			</script>
